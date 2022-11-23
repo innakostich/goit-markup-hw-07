@@ -36,11 +36,11 @@ img{
 .button{
   display: inline-block;
 }
-.section.work , .section-credo, .section.portfolio, section.team,.section.clients {
+.section__work , .section__features, .section.portfolio, section__team,.section.clients {
   padding-bottom: 94px;
   
 }
-.section.portfolio, .section-credo, .section.team,.section.clients {
+.section.portfolio, .section__features, .section__team,.section.clients {
 padding-top: 94px;
 }
 
@@ -56,7 +56,7 @@ padding-top: 94px;
  
   
 }
-.page-header {
+.header {
   border-bottom: 1px solid #ECECEC;
 }
 body{
@@ -65,14 +65,16 @@ body{
   font-family: 'Roboto', sans-serif ;
   letter-spacing: 0.03em;
 }
-.container.main-nav,
+.header__container,
 .footer > .container {
-padding-top: 0;
-padding-bottom: 0;
+ padding-top: 0;
+ padding-bottom: 0;
+ display: flex;
+ align-items: center;
 }
 
 /*logo*/
-.logo{
+.nav__logo{
   color: var(--secondary-accent-color);
   font-family: 'Raleway', sans-serif ;
   font-weight: 700;
@@ -84,32 +86,32 @@ padding-bottom: 0;
 }
 
 /*site-nav*/
-.site-nav-list{
+.nav__list{
   list-style: none;
 }
-.site-nav,
-.contacts-list{
-display: flex;
-align-items: center;
-list-style: none;
+.nav,
+.contacts__list{
+ display: flex;
+ align-items: center;
+ list-style: none;
 }
 
-.contacts-list{
+.contacts__list{
   margin-left: auto;
 }
-.site-nav-list .item:not(:last-child) {
+.nav__list .nav__item:not(:last-child) {
   margin-right: 50px;
 }
-.contacts-list .item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-right: 30px;
 }
-.site-nav-list{
+.nav__list{
   display: flex;
   margin-left: 93px;
   
   }
 
-.site-nav-list .link {
+.nav__list .nav__link {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -123,8 +125,8 @@ list-style: none;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.site-nav-list .link:hover,
-.site-nav-list .link:focus
+.nav__list .nav__link:hover,
+.nav__list .nav__link:focus
 {
   color: var(--accent-color);
   
@@ -143,7 +145,7 @@ list-style: none;
 }
 
 /*contacts */
-.contacts-list .link{
+.contacts__link{
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -155,26 +157,22 @@ list-style: none;
   padding-bottom: 32px;
   gap:10px ;
 }
-.contacts-list{
+.contacts__list{
   list-style: none;
   padding:0; 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-list .link:hover,
-.contacts-list .link:focus 
+.contacts__link:hover,
+.contacts__link:focus 
 {
   color: var(--accent-color) ;
   
 }
-.contacts-icon{
+.contacts__icon{
   fill: currentColor;
 }
 
-.main-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 /*hero*/
 
 .hero{
@@ -193,7 +191,7 @@ list-style: none;
  }
 
 
-.hero-title {
+.hero__title {
   color: var(--contacts-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -203,7 +201,7 @@ list-style: none;
   margin-bottom: 30px; 
 
 }
-.order-button{
+.hero__button{
   background-color: var(--accent-color);
   color: var(--contacts-text-color);
   font-family: inherit;
@@ -217,13 +215,13 @@ list-style: none;
   box-shadow: 0px 4px 4px rgba(0,0,0,0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.order-button:hover, 
-.order-button:focus {
+.hero__button:hover, 
+.hero__button:focus {
   color:var(--contacts-text-color) ;
   background-color: #188CE8;
   
 }
-.order-button:active{
+.hero__button:active{
   color: #188CE8;
   
 }
@@ -463,14 +461,14 @@ list-style: none;
  }
 
 /*Company Credo Section*/
-.features-list{
+.features__list{
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
 
-.features-title{
+.features__title{
   
 color: var(--primary-text-color);
 font-size: 14px;
@@ -478,16 +476,16 @@ line-height: calc(16/14);
 margin-bottom: 10px;
 
 }
-.features-description{
+.features__description{
   color: var(--secondary-text-color);
   font-size: 14px;
   line-height: calc(24/14);
 
 }
-.features-card:not(:last-child) {
+.features__item:not(:last-child) {
   margin-right: 30px;
 }
-.icon-card{
+.features__card{
     display: block;
     content: '';
     width: 270px;
@@ -505,11 +503,11 @@ margin-bottom: 10px;
 
 
 /*Work Section*/
-.section-work{
+.section__work{
 
 padding-top: 0;
 }
-.work-list{
+.work__list{
   list-style: none;
   display: flex;
   justify-content:space-evenly;
@@ -518,26 +516,26 @@ padding-top: 0;
   
 }
 
-.section-work{
+.work__title{
   color: var(--primary-text-color); 
   font-size: 36px;
   line-height: calc(42/36);
   text-align: center;
   margin-bottom: 50px;
 }
-.img-list:not(:last-child) {
+.work__item:not(:last-child) {
   margin-right: 30px;
 }
-.img-list{
+.work__item{
   padding-bottom: 0;
   
 }
 
 
-  .work-thumb{
+  .work__thumb{
     position: relative;
   }
-  .work-thumb::before{
+  .work__thumb::before{
     display: inline-block;
     position:absolute;
     content: '';
@@ -548,7 +546,7 @@ padding-top: 0;
     right: 0;
   }
 
-.work-text{
+.work__text{
  
   position: absolute;
   bottom: 0;
@@ -569,7 +567,7 @@ padding-top: 0;
 
 /*Team Section*/
 
-.section-galery{
+.gallery__name{
   color: var(--primary-text-color);
   font-size: 36px;
   line-height: calc(42/36);
@@ -578,28 +576,34 @@ padding-top: 0;
   
 }
 
-.section.team{
+.section__team{
   background-color: #F5F4FA;
  
 }
-.team-list{
+.gallery__list{
   list-style: none;
   display: flex;
   text-align: center;
   padding-left: 0;
   margin: 0;
 }
-.team-card:not(:last-child) {
+.gallery__card:not(:last-child) {
 
   margin-right: 30px;
 }
-.team-card{
+.gallery__card{
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   border: none;
   background-color: var(--contacts-text-color);
 }
-.team-subtitle{
+
+.gallery__box{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  }
+  
+.gallery__name{
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -607,13 +611,8 @@ padding-top: 0;
   margin-bottom: 10px;
 
 }
-.team-box{
-padding-top: 30px;
-padding-bottom: 30px;
-}
 
-
-.position{
+.gallery__position{
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: calc(19/16);
