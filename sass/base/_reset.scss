@@ -1,0 +1,42 @@
+h1,h2, h3, h4, h5, h6, p{
+    margin: 0;
+  }
+  .link a {
+    text-decoration: none;
+    color: currentColor;
+  }
+  .list, ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  
+  }
+  img{
+    display: block;
+  }
+  .button{
+    display: inline-block;
+  }
+  .work , .features, .section.portfolio, .team,.clients {
+    padding-bottom: 94px;
+    
+  }
+  .section.portfolio, .features, .team, .clients {
+  padding-top: 94px;
+  }
+  .header {
+    border-bottom: 1px solid #ECECEC;
+  }
+  body{
+ 
+    color: var(--secondary-text-color);
+    font-family: 'Roboto', sans-serif ;
+    letter-spacing: 0.03em;
+  }
+  .nav,
+  .header__contacts{
+   display: flex;
+   align-items: center;
+   list-style: none;
+  }
+  
