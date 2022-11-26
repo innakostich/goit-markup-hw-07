@@ -398,35 +398,30 @@ img {
 
 .modal-form-wrapper textarea::-webkit-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
-  font: Roboto;
   font-size: 12px;
   line-height: 14.06px;
 }
 
 .modal-form-wrapper textarea::-moz-placeholder {
   color: rgba(117, 117, 117, 0.5);
-  font: Roboto;
   font-size: 12px;
   line-height: 14.06px;
 }
 
 .modal-form-wrapper textarea:-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
-  font: Roboto;
   font-size: 12px;
   line-height: 14.06px;
 }
 
 .modal-form-wrapper textarea::-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
-  font: Roboto;
   font-size: 12px;
   line-height: 14.06px;
 }
 
 .modal-form-wrapper textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
-  font: Roboto;
   font-size: 12px;
   line-height: 14.06px;
 }
@@ -827,7 +822,6 @@ img {
 
 .logo-footer {
   color: var(--contacts-text-color);
-  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.1923076923;

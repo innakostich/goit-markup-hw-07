@@ -1,6 +1,6 @@
 .logo-footer{
     color: var(--contacts-text-color);
-    font-family: 'Raleway', sans-serif ;
+    $secondaryFont: "Raleway";
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31/26);
