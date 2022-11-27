@@ -27,6 +27,7 @@ body {
   --accent-color: #2196F3;
   --secondary-background-color:#2F303A;
   --secondary-accent-color: #000000;
+  --accent-color-bkground: #F5F4FA;
   --anim-fast: 300ms ease-in-out;
   --anim-slow: 800ms ease;
 }
@@ -600,8 +601,8 @@ img {
   color: var(--contacts-text-color);
 }
 
-.section__team {
-  background-color: #F5F4FA;
+.team {
+  background-color: var(--accent-color-bkground);
 }
 
 .team__title {
@@ -807,15 +808,14 @@ img {
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
   padding-left: 0;
-  margin-bottom: 0;
 }
-.footer-list:not(:last-child) {
+.footer-list :not(:last-child) {
   display: block;
   margin-top: 0;
   margin-bottom: 9px;
 }
 
-.footer-contact .link {
+.footer-list .footer-contact .link {
   color: var(--secondary-contacts-color);
   text-decoration: none;
 }

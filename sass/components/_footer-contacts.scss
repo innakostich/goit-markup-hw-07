@@ -21,15 +21,15 @@
   line-height: calc(24/14);
   letter-spacing: 0.03em;
   padding-left: 0;
-  margin-bottom: 0;
 
-  &:not(:last-child) {
+  & :not(:last-child) {
     display: block;
     margin-top: 0;
     margin-bottom: 9px;
+}
+ 
   }
-  }
-  
+  .footer-list
   .footer-contact .link{
     color: var(--secondary-contacts-color);
     text-decoration: none;

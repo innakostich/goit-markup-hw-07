@@ -1,7 +1,6 @@
- .section__team{
-    background-color: #F5F4FA;
-   
-  }
+.team {
+  background-color: var(--accent-color-bkground);
+}
   .team__title{
     color: var(--primary-text-color);
     font-size: 36px;
