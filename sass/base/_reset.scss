@@ -17,12 +17,11 @@ h1,h2, h3, h4, h5, h6, p{
   .button{
     display: inline-block;
   }
-  .work , .features, .section.portfolio, .team,.clients {
+ 
+  .section {
     padding-bottom: 94px;
+    padding-top: 94px;
     
-  }
-  .section.portfolio, .features, .team, .clients {
-  padding-top: 94px;
   }
  
   .header {
@@ -35,4 +34,6 @@ h1,h2, h3, h4, h5, h6, p{
    align-items: center;
    list-style: none;
   }
-  
+  html {
+    scroll-behavior: smooth;
+  }

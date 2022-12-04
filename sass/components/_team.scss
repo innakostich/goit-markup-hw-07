@@ -1,6 +1,8 @@
 .team {
   background-color: var(--accent-color-bkground);
+  
 }
+
   .team__title{
     color: var(--primary-text-color);
     font-size: 36px;
@@ -16,6 +18,10 @@
     text-align: center;
     padding-left: 0;
     margin: 0;
+    @media screen and (min-width:768px){
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
   
   .team__img{
@@ -27,6 +33,10 @@
     &:not(:last-child) {
   
         margin-right: 30px;
+      }
+
+      @media screen and (min-width:768px){
+        width: 50%;
       }
   }
   
