@@ -18,10 +18,6 @@
     text-align: center;
     padding-left: 0;
     margin: 0;
-    @media screen and (min-width:768px){
-      display: flex;
-      flex-wrap: wrap;
-    }
   }
   
   .team__img{
@@ -35,9 +31,6 @@
         margin-right: 30px;
       }
 
-      @media screen and (min-width:768px){
-        width: 50%;
-      }
   }
   
   .team__box{
