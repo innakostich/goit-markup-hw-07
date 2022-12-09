@@ -1,6 +1,7 @@
 //utils styles
 @import './utils/variables';
 @import './utils/visually-hidden';
+@import './utils/breakpoints';
 
 //base styles
 @import './base/base';
@@ -8,7 +9,7 @@
 
 //components styles
 @import './components/container';
-@import './components/nav-logo';
+@import './components/nav-footer-logo';
 @import './components/header';
 @import './components/hero';
 @import './components/modal';
@@ -17,11 +18,7 @@
 @import './components/work';
 @import './components/team';
 @import './components/clients';
-@import './components/clients';
-@import './components/footer-contacts';
-@import './components/footer-logo';
-@import './components/footer-socials';
-@import './components/footer-subsc';
+@import './components/footer';
 @import './components/filter-portfolio';
 @import './components/portfolio';
 @import './components/project-thumb';
