@@ -75,44 +75,18 @@ img {
   list-style: none;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .container {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: var(--primary-background-color);
-}
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
 }
 
 .header__container,
 .footer > .container {
   padding-top: 0;
   padding-bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .nav__logo {
@@ -173,20 +147,8 @@ html {
   margin-left: auto;
 }
 
-@media screen and (min-width: 1200px) {
-  .header__contacts__item:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .header__contacts__item + .header__contacts__item {
-    margin-top: 16px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header__contacts__item + .header__contacts__item {
-    margin-top: 10px;
-  }
+.header__contacts__item {
+  margin-right: 30px;
 }
 
 .header__contacts__link {
@@ -428,30 +390,35 @@ html {
 
 .modal-form-wrapper textarea::-webkit-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 14.06px;
 }
 
 .modal-form-wrapper textarea::-moz-placeholder {
   color: rgba(117, 117, 117, 0.5);
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 14.06px;
 }
 
 .modal-form-wrapper textarea:-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 14.06px;
 }
 
 .modal-form-wrapper textarea::-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 14.06px;
 }
 
 .modal-form-wrapper textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 14.06px;
 }
@@ -534,15 +501,6 @@ html {
   margin: 0;
   padding: 0;
 }
-@media screen and (min-width: 768px) {
-  .features__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
 
 .features__title {
   color: var(--primary-text-color);
@@ -581,15 +539,8 @@ html {
           align-items: center;
 }
 
-@media screen and (min-width: 480px) {
-  .work {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .work {
-    display: none;
-  }
+.work {
+  padding-top: 0;
 }
 
 .work__list {
@@ -680,15 +631,6 @@ html {
   padding-left: 0;
   margin: 0;
 }
-@media screen and (min-width: 768px) {
-  .team__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
 
 .team__img {
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -699,11 +641,6 @@ html {
 }
 .team__img:not(:last-child) {
   margin-right: 30px;
-}
-@media screen and (min-width: 768px) {
-  .team__img {
-    width: 50%;
-  }
 }
 
 .team__box {
@@ -784,23 +721,9 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media screen and (min-width: 768px) {
-  .clients__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
 
 .clients__item:not(:last-child) {
   margin-right: 30px;
-}
-@media screen and (min-width: 480px) {
-  .clients__item {
-    width: 50%;
-  }
 }
 
 .clients__link {
@@ -842,23 +765,9 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media screen and (min-width: 768px) {
-  .clients__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
 
 .clients__item:not(:last-child) {
   margin-right: 30px;
-}
-@media screen and (min-width: 480px) {
-  .clients__item {
-    width: 50%;
-  }
 }
 
 .clients__link {
